@@ -1,54 +1,88 @@
-🧠 TumorScope – Brain Tumor Classification with Deep Learning & Gemini AI
+# 🧠 TumorScope – Brain Tumor Classification with Deep Learning & Gemini AI
 
-📌 Project Overview
-TumorScope is a Streamlit-based web app that classifies brain MRI scans into four categories:
-Glioma
-Meningioma
-Pituitary Tumor
-No Tumor
+![Streamlit](https://img.shields.io/badge/Streamlit-Cloud-success?logo=streamlit)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-2.x-orange?logo=tensorflow)
+![License](https://img.shields.io/badge/License-MIT-blue.svg)
+![Status](https://img.shields.io/badge/Status-Deployed-success)
 
-It uses:
-✅ Xception (Transfer Learning)
-✅ Custom CNN model
-✅ Saliency Maps for Explainability
-✅ Gemini 1.5 Flash for Medical Explanation
+---
 
-✅ Features
-✔ Upload Brain MRI images for instant classification
-✔ Two Models to Choose From: Transfer Learning & Custom CNN
-✔ Saliency Maps to visualize important brain regions
-✔ AI-Powered Explanation using Gemini 1.5 Flash
-✔ Interactive Probability Charts
-✔ Deployed on Streamlit Cloud
+## 📖 Overview
 
-🚀 Tech Stack
-| Component          | Technology         |
-| ------------------ | ------------------ |
-| **Frontend**       | Streamlit          |
-| **Model Training** | TensorFlow / Keras |
-| **Explainability** | Gemini 1.5 Flash   |
-| **Visualization**  | Plotly, OpenCV     |
-| **Deployment**     | Streamlit Cloud    |
+**TumorScope** is a web application that classifies **brain MRI scans** into four categories:
+- **Glioma**
+- **Meningioma**
+- **Pituitary Tumor**
+- **No Tumor**
 
-🔧 Setup Instructions
-1. Clone the Repository
-git clone https://github.com/your-username/tumor-scope.git
+The app uses:
+- **Xception (Transfer Learning)**
+- **Custom CNN Model**
+- **Saliency Maps** for interpretability
+- **Gemini 1.5 Flash (Google AI)** to generate concise **medical explanations** for predictions
+
+The project is deployed on **Streamlit Cloud** and provides an interactive user experience for radiologists, researchers, and students.
+
+---
+
+## ✨ Key Features
+
+- **Upload Brain MRI Images** for classification
+- **Dual-Model Selection**: Transfer Learning (Xception) or Custom CNN
+- **Saliency Map Generation** to visualize important image regions
+- **AI-Powered Explanations** via Gemini 1.5 Flash
+- **Interactive Probability Charts** with Plotly
+- **Secure Deployment** on Streamlit Cloud
+
+---
+
+## 🛠 Tech Stack
+
+| Component         | Technology              |
+|-------------------|-------------------------|
+| **Frontend**      | Streamlit               |
+| **Model Training**| TensorFlow / Keras      |
+| **Explainability**| Gemini 1.5 Flash        |
+| **Visualization** | OpenCV, Plotly          |
+| **Deployment**    | Streamlit Cloud         |
+
+
+---
+
+## 🚀 Getting Started
+
+### 1️⃣ Clone the Repo
+```bash
+git clone https://github.com/rahatmoktadir03/tumor-scope.git
 cd tumor-scope
-2. Install Dependencies 
+```
+
+### 2️⃣ Install Dependencies
+```bash
 pip install -r requirements.txt
-3. Add Your API Key
-Create a .env file in the root:
-GOOGLE_API_KEY=your-gemini-api-key
-4. Run Locally
+```
+
+### 3️⃣ Add Gemini API Key
+ - Create a .env file in the project root:
+   ```init
+   GOOGLE_API_KEY=your-gemini-api-key
+   ```
+
+### 4️⃣ Run Locally
+```bash
 streamlit run streamlit_app.py
+```
 
-📊 Challenges Completed
-✅ Achieved 98% accuracy with Custom CNN
-✅ Added Transfer Learning with Xception (99% accuracy)
-✅ Integrated Gemini for Medical Explanation
-✅ Added Saliency Map Visualization
+---
 
-🎯 Future Enhancements
-✅ Allow user to chat with MRI scan
-✅ Add multi-model comparison dashboard
-✅ Generate detailed diagnostic reports
+## 📊 Models and Accuracy
+- Xception (Transfer Learning) – ~99% accuracy
+- Custom CNN – ~98% accuracy
+- Saliency Maps highlight critical regions for model interpretability
+
+---
+
+## 🔮 Future Improvements
+- Chat with MRI scan (using multimodal LLMs)
+- Compare multiple models side-by-side
+- Generate detailed diagnostic reports for doctors
